@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="arsnavi.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.vb" Inherits="arsnavi.MvcApplication" Language="VB" %>

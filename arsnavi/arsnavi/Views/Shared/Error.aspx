@@ -1,7 +1,4 @@
-﻿@{
-    Layout = null;
-}
-
+﻿<%@ Page Language="VB" Inherits="System.Web.Mvc.ViewPage" %>
 <!DOCTYPE html>
 <html>
 <head>
