@@ -157,6 +157,8 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Controllers\homeController.vb" />
+    <Compile Include="Controllers\loginController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -249,6 +251,9 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="packages.config" />
+    <Content Include="Views\home\index.aspx" />
+    <Content Include="Views\login\index.aspx" />
+    <Content Include="Views\master.Master" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -281,7 +286,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
