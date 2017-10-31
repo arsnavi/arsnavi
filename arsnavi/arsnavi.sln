@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arsnavi", "arsnavi\arsnavi.csproj", "{D4987AC4-5B43-4CA8-B1E7-F16B23A6406A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arsnavi.Tests", "arsnavi.Tests\arsnavi.Tests.csproj", "{44C102C1-734A-40F5-BC63-7E5F0EF32A17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4987AC4-5B43-4CA8-B1E7-F16B23A6406A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4987AC4-5B43-4CA8-B1E7-F16B23A6406A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4987AC4-5B43-4CA8-B1E7-F16B23A6406A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4987AC4-5B43-4CA8-B1E7-F16B23A6406A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C102C1-734A-40F5-BC63-7E5F0EF32A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C102C1-734A-40F5-BC63-7E5F0EF32A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C102C1-734A-40F5-BC63-7E5F0EF32A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C102C1-734A-40F5-BC63-7E5F0EF32A17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
