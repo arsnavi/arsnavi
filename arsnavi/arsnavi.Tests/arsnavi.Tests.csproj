@@ -6,42 +6,35 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FD505949-1F5D-4F4A-B72F-6AEA88F0F8B2}</ProjectGuid>
+    <ProjectGuid>{F6E18260-8980-435C-86B0-3EBF6FE779F8}</ProjectGuid>
     <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>arsnavi.Tests</RootNamespace>
     <AssemblyName>arsnavi.Tests</AssemblyName>
-    <FileAlignment>512</FileAlignment>
-    <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
-    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
-    <ReferencePath>$(DevEnvDir)PublicAssemblies\</ReferencePath>
-    <OptionExplicit>On</OptionExplicit>
-    <OptionCompare>Binary</OptionCompare>
-    <OptionStrict>Off</OptionStrict>
-    <OptionInfer>On</OptionInfer>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>arsnavi.Tests.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>arsnavi.Tests.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <SpecificVersion>True</SpecificVersion>
-    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -104,18 +97,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Import Include="System" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Collections.Generic" />
-    <Import Include="System.Data" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -124,12 +106,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\arsnavi\arsnavi.vbproj">
-      <Project>{BAE43F57-3D24-45C8-A07C-84183DC3585A}</Project>
+    <ProjectReference Include="..\arsnavi\arsnavi.csproj">
+      <Project>{196107B1-93B4-4062-9E81-36A81DE5BE38}</Project>
       <Name>arsnavi</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
