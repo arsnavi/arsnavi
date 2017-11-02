@@ -17,11 +17,12 @@
             height: 120px;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="../Shared/master.css" />
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-
+        
         <img class="auto-style2" src="../../App_Data/logo.png"/><br />
         <table class="auto-style1">
             <tr>
