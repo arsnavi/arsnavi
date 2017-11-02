@@ -20,10 +20,11 @@
         }
         .auto-style2 {
             width: 576px;
-            background-color : #CAD6D2;
+           
         }
-         .auto-style2 {
+         .auto-style3 {
             width: 576px;
+             background-color : #CAD6D2;
             
         }
     </style>
@@ -48,7 +49,7 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox2" runat="server" Width="154px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" background-color =" #CAD6D2" runat="server" Width="154px"  ></asp:TextBox>
                 </td>
             </tr>
             <tr>
