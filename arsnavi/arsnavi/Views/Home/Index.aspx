@@ -11,17 +11,17 @@
 <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h2>
    
 
-        <asp:Button ID="Button_Timetable" runat="server" Height="163px" Text="時間割の画像（できたら常に更新させたい）" Width="771px" />
-        <br />
-        <br />
-        <asp:ListBox ID="ListBox_Notice" runat="server" Height="179px" Width="768px"></asp:ListBox>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-    </form>
+    <asp:Button ID="Button_Timetable" runat="server" Height="163px" Text="時間割の画像（できたら常に更新させたい）" Width="771px" />
+    <br />
+    <br />
+    <asp:ListBox ID="ListBox_Notice" runat="server" Height="179px" Width="768px"></asp:ListBox>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</form>
    
 
 </asp:Content>
