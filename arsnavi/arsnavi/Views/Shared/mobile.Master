@@ -6,12 +6,101 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 464px;
+            height: 20px;
+        }
+        .auto-style4 {
+            height: 20px;
+        }
+        .auto-style5 {
+            height: 20px;
+            width: 179px;
+        }
+        .auto-style6 {
+            width: 200px;
+            height: 20px;
+        }
+        .auto-style7 {
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
+            <p>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style6">&nbsp;</td>
+                        <td class="auto-style2">&nbsp;</td>
+                        <td class="auto-style5">
+                            <asp:HyperLink ID="HyperLink_chenge_profile" runat="server">[HyperLink_chenge_profile]</asp:HyperLink>
+                        </td>
+                        <td class="auto-style4">
+                            <asp:HyperLink ID="HyperLink_logout" runat="server">[HyperLink_logout]</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">
+                            <table class="auto-style1">
+                                <tr>
+                                    <td>野獣先輩</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style4">16A00</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                            <br />
+                            <asp:ListBox ID="ListBox1" runat="server" Height="90px" Width="193px"></asp:ListBox>
+                        </td>
+                        <td class="auto-style2" rowspan="3">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                        <td class="auto-style5" rowspan="3">&nbsp;</td>
+                        <td class="auto-style4" rowspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">
+                            <asp:Button ID="Button1" runat="server" Text="就活お役立ちサイト" Width="195px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">
+                            <asp:Button ID="Button2" runat="server" Text="企業情報" Width="193px" />
+                        </td>
+                    </tr>
+                </table>
+            </p>
+        
         </asp:ContentPlaceHolder>
     </div>
+    </form>
 </body>
 </html>
