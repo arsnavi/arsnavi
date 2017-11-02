@@ -34,7 +34,11 @@
     <form id="form1" runat="server">
     <div style="text-align:center; background-color : #CAD6D2; height: 690px; width: 787px;">
         
+<<<<<<< HEAD
+        <img class="logo" src="../../App_Data/logo.png" /><br />
+=======
         <img class="logo" src="../../App_Data/logo.png" /> <br />
+>>>>>>> 0e3c6ae1b4d1b756839f3c83d0ba154d2f1988ed
         <table class="auto-style1" align="center" >
             <tr>
                 <td style="text-align:left" class="auto-style2">学籍番号</td>
