@@ -27,7 +27,7 @@
     <form id="form1" runat="server">
     <div style="text-align:center">
         
-        <img class="logo" src="../../App_Data/logo.png"/><br />
+        <img class="logo" src="../../App_Data/logo.png" /><br />
         <table class="auto-style1" align="center" >
             <tr>
                 <td style="text-align:left" class="auto-style2">学籍番号</td>
