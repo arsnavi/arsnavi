@@ -9,40 +9,50 @@
     <style type="text/css">
         .auto-style1 {
             text-align:center;
-            width: 19%;
-            height: 254px;
+            width: 14%;
+            height: 239px;
             margin-right: 0px;
+             background-color : #ffffff;
         }
         .logo {
             width: 160px;
             height: 120px;
         }
         .auto-style2 {
-            width: 571px;
+            width: 576px;
+            background-color : #CAD6D2;
+        }
+         .auto-style2 {
+            width: 576px;
+            
         }
     </style>
     <link rel="stylesheet" type="text/css" href="../Shared/master.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="text-align:center">
+    <div style="text-align:center; background-color : #CAD6D2; height: 690px; width: 787px;">
         
+<<<<<<< HEAD
         <img class="logo" src="../../App_Data/logo.png" /><br />
+=======
+        <img class="logo" src="../../App_Data/logo.png" /> <br />
+>>>>>>> 0e3c6ae1b4d1b756839f3c83d0ba154d2f1988ed
         <table class="auto-style1" align="center" >
             <tr>
                 <td style="text-align:left" class="auto-style2">学籍番号</td>
             </tr>
             <tr>
-                <td class="auto-style2">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <td class="auto-style3">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="157px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:left" class="auto-style2">パスワード</td>
             </tr>
             <tr>
-                <td class="auto-style2">
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <td class="auto-style3">
+                    <asp:TextBox ID="TextBox2" runat="server" Width="154px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
