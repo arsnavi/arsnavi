@@ -217,7 +217,7 @@
     <Content Include="Views\Employment\Make\Style3.aspx" />
     <Content Include="Views\Employment\Make\Style4.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Login\Change_prfile.aspx" />
+    <Content Include="Views\Login\ChangeProfile.aspx" />
     <Content Include="Views\Login\Index.aspx" />
     <Content Include="Views\Shared\master.css" />
     <Content Include="Web.config" />
