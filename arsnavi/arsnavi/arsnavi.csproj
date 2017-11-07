@@ -220,6 +220,7 @@
     <Content Include="Views\Login\ChangeProfile.aspx" />
     <Content Include="Views\Login\Index.aspx" />
     <Content Include="Views\Shared\master.css" />
+    <Content Include="Views\Teacher\Activity.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
