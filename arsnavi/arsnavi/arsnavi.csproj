@@ -207,6 +207,15 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Employment\Activity.aspx" />
+    <Content Include="Views\Employment\Index.aspx" />
+    <Content Include="Views\Employment\List.aspx" />
+    <Content Include="Views\Employment\Info.aspx" />
+    <Content Include="Views\Employment\Make\Absence.aspx" />
+    <Content Include="Views\Employment\Make\Style1.aspx" />
+    <Content Include="Views\Employment\Make\Style2.aspx" />
+    <Content Include="Views\Employment\Make\Style3.aspx" />
+    <Content Include="Views\Employment\Make\Style4.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Login\Change_prfile.aspx" />
     <Content Include="Views\Login\Index.aspx" />
