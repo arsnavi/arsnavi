@@ -7,66 +7,67 @@
     <meta name="viewport" content="width=device-width" />
     <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
     <link rel="stylesheet" type="text/css" href ="./master.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: right;
+        }
+        .auto-style3 {
+            width: 257px;
+        }
+    </style>
 </head>
 <body>
-
-    <!--
-    <div>
-        master<asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    -->
+    <form id="form1" runat="server">
     <div>
 
         <p>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style6">&nbsp;</td>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style5">
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">
                         <asp:HyperLink ID="HyperLink_chenge_profile" runat="server">[HyperLink_chenge_profile]</asp:HyperLink>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:HyperLink ID="HyperLink_logout" runat="server">[HyperLink_logout]</asp:HyperLink>
+                    &nbsp;<asp:HyperLink ID="HyperLink_logout" runat="server">[HyperLink_logout]</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">
-                        <table class="auto-style1">
-                            <tr>
-                                <td>野獣先輩</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style4">16A00</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
+                    <td class="auto-style2">
+                        <asp:Label ID="Label_name" runat="server" Text="野獣先輩"></asp:Label>
                         <br />
-                        <asp:ListBox ID="ListBox1" runat="server" Height="90px" Width="193px"></asp:ListBox>
                     </td>
-                    <td class="auto-style2" rowspan="3" colspan="3">
+                    <td class="auto-style2" rowspan="5">
                         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
                         </asp:ContentPlaceHolder>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">
+                    <td class="auto-style2">
+                        <asp:Label ID="Label_id" runat="server" Text="Label"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
                         <asp:Button ID="Button1" runat="server" Text="就活お役立ちサイト" Width="195px" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">
-                        <asp:Button ID="Button2" runat="server" Text="企業情報" Width="193px" />
+                    <td class="auto-style3">
                     </td>
                 </tr>
             </table>
         </p>
 
     </div>
+
+    </form>
 
 </body>
 </html>
