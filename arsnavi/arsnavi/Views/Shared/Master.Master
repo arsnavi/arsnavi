@@ -33,6 +33,7 @@
 
 
     <div id="left" style="position:absolute; width:20%">
+        <br />
         <%=Html.Encode(ViewData["name"]) %><br />
         <%=Html.Encode(ViewData["id"]) %>
     </div>
