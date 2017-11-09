@@ -13,6 +13,9 @@ namespace arsnavi.Controllers
 
         public ActionResult Index()
         {
+            ViewData["name"] = "野獣先輩";
+            ViewData["id"] = "16A00";
+
             return View();
         }
 
