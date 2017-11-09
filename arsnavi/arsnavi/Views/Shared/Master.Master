@@ -7,11 +7,21 @@
     <meta name="viewport" content="width=device-width" />
     <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
     <link rel="stylesheet" type="text/css" href ="./master.css" />
+
+
+
     <style type="text/css">
+        .area_left{
+            position:absolute;
+            width:100px;
+        }
+        .area_right{
+            margin-left:100px;
+        }
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
+        .right {
             text-align: right;
         }
         .auto-style3 {
@@ -20,54 +30,18 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
 
-        <p>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style2">
-                        <asp:HyperLink ID="HyperLink_chenge_profile" runat="server">[HyperLink_chenge_profile]</asp:HyperLink>
-                    &nbsp;<asp:HyperLink ID="HyperLink_logout" runat="server">[HyperLink_logout]</asp:HyperLink>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">
-                        <asp:Label ID="Label_name" runat="server" Text="野獣先輩"></asp:Label>
-                        <br />
-                    </td>
-                    <td class="auto-style2" rowspan="5">
-                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-                        </asp:ContentPlaceHolder>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">
-                        <asp:Label ID="Label_id" runat="server" Text="Label"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Button ID="Button1" runat="server" Text="就活お役立ちサイト" Width="195px" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                    </td>
-                </tr>
-            </table>
-        </p>
 
+    <div id="left" style="position:absolute; width:20%">
+        <%=Html.Encode(ViewData["name"]) %><br />
+        <%=Html.Encode(ViewData["id"]) %>
     </div>
 
-    </form>
+    <div id="right" style="margin-left:20%">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
 
+    
 </body>
 </html>
