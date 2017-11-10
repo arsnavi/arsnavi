@@ -6,16 +6,13 @@ using System.Web.Mvc;
 
 namespace arsnavi.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : MasterController
     {
         //
         // GET: /Home/
 
         public ActionResult Index()
         {
-            ViewData["name"] = "野獣先輩";
-            ViewData["id"] = "16A00";
-
             return View();
         }
     }

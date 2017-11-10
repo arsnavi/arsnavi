@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace arsnavi.Controllers
 {
-    public class EmploymentController : Controller
+    public class EmploymentController : MasterController
     {
         //
         // GET: /Employment/
