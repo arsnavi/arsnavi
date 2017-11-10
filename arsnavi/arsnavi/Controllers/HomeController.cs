@@ -18,6 +18,5 @@ namespace arsnavi.Controllers
 
             return View();
         }
-
     }
 }
