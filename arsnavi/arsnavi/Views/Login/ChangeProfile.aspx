@@ -1,21 +1,11 @@
-﻿
-<%@ Page Language="C#"  Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/master.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
-﻿<!--登録情報変更-->
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    ChangeProfile
+</asp:Content>
 
-<!DOCTYPE html>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<html>
-<head runat="server">
-    <meta name="viewport" content="width=device-width" />
-    <title>Change_prfile</title>
-</head>
-<body>
-    <p>
-        <br />
-    </p>
-    <div>
-        
-    </div>
-</body>
-</html>
+<h2>ChangeProfile</h2>
+
+</asp:Content>
