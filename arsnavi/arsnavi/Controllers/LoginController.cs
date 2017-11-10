@@ -16,5 +16,10 @@ namespace arsnavi.Controllers
             return View();
         }
 
+        public ActionResult ChangeProfile()
+        {
+            return View();
+        }
+
     }
 }

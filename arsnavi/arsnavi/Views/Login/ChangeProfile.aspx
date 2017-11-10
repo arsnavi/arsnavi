@@ -1,6 +1,7 @@
-﻿<!--登録情報変更
-    -->
+
 <%@ Page Language="C#"  Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+
+﻿<!--登録情報変更-->
 
 <!DOCTYPE html>
 
