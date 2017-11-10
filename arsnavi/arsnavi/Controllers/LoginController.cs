@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace arsnavi.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : MasterController
     {
         //
         // GET: /Login/
