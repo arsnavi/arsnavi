@@ -6,6 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>ChangeProfile</h2>
+<h2>&nbsp;</h2>
 
 </asp:Content>

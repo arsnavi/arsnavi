@@ -210,7 +210,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Employment\Activity.aspx" />
     <Content Include="Views\Employment\Index.aspx" />
-    <Content Include="Views\Employment\List.aspx" />
+    <Content Include="Views\Employment\CompanyList.aspx" />
     <Content Include="Views\Employment\Info.aspx" />
     <Content Include="Views\Employment\Make\Absence.aspx" />
     <Content Include="Views\Employment\Make\Style1.aspx" />
