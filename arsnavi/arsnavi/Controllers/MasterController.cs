@@ -8,13 +8,16 @@ namespace arsnavi.Controllers
 {
     public class MasterController : Controller
     {
-        private String name;
-        private String id;
+        private static String name;
+        private static String id;
 
         public MasterController()
         {
             name = "野獣先輩";
             id = "16A00";
+
+            Session["name"] = name;
+            Session["id"] = id;
 
             ViewData["name"] = name;
             ViewData["id"] = id;

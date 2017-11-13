@@ -12,7 +12,7 @@
             <tr>
                 <td class="auto-style3" style="width: 100px">学籍番号</td>
                 <td style="width: 149px">
-                    <asp:Label ID="Label_Nomber" runat="server"></asp:Label>
+                    <asp:Label ID="Label_Number" runat="server"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>

@@ -13,6 +13,8 @@ namespace arsnavi.Controllers
 
         public ActionResult Index()
         {
+            
+
             return View();
         }
 
