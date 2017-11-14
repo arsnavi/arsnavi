@@ -35,7 +35,7 @@
           <Property Name="license" Type="Boolean" Nullable="false" />
           <Property Name="mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="arsnaviEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="student" EntityType="Self.student" />
         </EntityContainer>
       </Schema>
@@ -43,7 +43,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="arsnaviModelStoreContainer" CdmEntityContainer="arsnaviEntities">
+        <EntityContainerMapping StorageEntityContainer="arsnaviModelStoreContainer" CdmEntityContainer="Entities">
           <EntitySetMapping Name="student">
             <EntityTypeMapping TypeName="arsnaviModel.student">
               <MappingFragment StoreEntitySet="student">
@@ -53,8 +53,6 @@
                 <ScalarProperty Name="sex" ColumnName="sex" />
                 <ScalarProperty Name="license" ColumnName="license" />
                 <ScalarProperty Name="mail" ColumnName="mail" />
-                <Condition ColumnName="id" Value="@id" />
-                <Condition ColumnName="pass" Value="@pass" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -73,7 +71,7 @@
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="false" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
         <DesignerProperty Name="UseLegacyProvider" Value="true" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="なし" />
       </DesignerInfoPropertySet>

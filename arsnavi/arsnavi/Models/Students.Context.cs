@@ -13,10 +13,10 @@ namespace arsnavi.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class arsnaviEntities : DbContext
+    public partial class Entities : DbContext
     {
-        public arsnaviEntities()
-            : base("name=arsnaviEntities")
+        public Entities()
+            : base("name=Entities")
         {
         }
     
