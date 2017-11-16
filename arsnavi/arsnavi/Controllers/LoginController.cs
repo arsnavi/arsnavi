@@ -13,8 +13,6 @@ namespace arsnavi.Controllers
 
         public ActionResult Index()
         {
-            
-
             return View();
         }
 
@@ -22,6 +20,5 @@ namespace arsnavi.Controllers
         {
             return View();
         }
-
     }
 }
