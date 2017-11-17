@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace arsnavi.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : MasterController
     {
         //
         // GET: /Home/
@@ -15,6 +15,5 @@ namespace arsnavi.Controllers
         {
             return View();
         }
-
     }
 }

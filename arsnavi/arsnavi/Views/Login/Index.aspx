@@ -24,17 +24,16 @@
         }
          .auto-style3 {
             width: 576px;
-             background-color : #CAD6D2;
             
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="../Shared/master.css" />
+    <link rel="stylesheet" type="text/css" href="<%:Url.Content("~/Content/Site.css") %>" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="text-align:center; background-color : #CAD6D2; height: 690px; width: 787px;">
+    <div style="text-align:center; ">
         
-        <img class="logo" src="../../App_Data/logo.png" />
+        <img class="logo" src="<%: Url.Content("~/Content/logo.png") %>" />
         <table class="auto-style1" align="center" >
             <tr>
                 <td style="text-align:left" class="auto-style2">学籍番号</td>
@@ -54,7 +53,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="ログイン" runat="server" Text="Button" />
+                    <asp:Button ID="button_login" runat="server" Text="Login" />
                 </td>
             </tr>
             <tr>
