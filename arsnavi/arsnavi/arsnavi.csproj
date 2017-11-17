@@ -219,7 +219,7 @@
     <Content Include="Views\Employment\Make\Style3.aspx" />
     <Content Include="Views\Employment\Make\Style4.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Login\ChangeProfile.aspx" />
+    <Content Include="Views\Login\Profile.aspx" />
     <Content Include="Views\Login\Index.aspx" />
     <Content Include="Views\master.css" />
     <Content Include="Views\Teacher\Activity.aspx" />

@@ -31,7 +31,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="text-align:center; height: 690px; width: 787px;">
+    <div style="text-align:center; ">
         
         <img class="logo" src="<%: Url.Content("~/Content/logo.png") %>" />
         <table class="auto-style1" align="center" >
