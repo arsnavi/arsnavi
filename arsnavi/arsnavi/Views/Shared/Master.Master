@@ -36,6 +36,8 @@
         <br />
         <%=Html.Encode(Session["name"]) %><br />
         <%=Html.Encode(Session["id"]) %>
+
+        <br />
     </div>
 
     <div id="right" style="margin-left:20%">
