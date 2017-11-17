@@ -21,7 +21,7 @@
                 <td style="width: 149px">
                     <asp:Label ID="Label_Name" runat="server"></asp:Label>
                 </td>
-                <td>
+                <td style="text-align: center">
                     <asp:Button ID="Button_Name" runat="server" Text="編集" />
                 </td>
             </tr>
@@ -30,7 +30,7 @@
                 <td style="width: 149px">
                     <asp:Label ID="Label_Pass" runat="server"></asp:Label>
                 </td>
-                <td>
+                <td style="text-align: center">
                     <asp:Button ID="Button_Pass" runat="server" Text="編集" />
                 </td>
             </tr>
@@ -39,7 +39,7 @@
                 <td style="width: 149px">
                     <asp:Label ID="Label_Sex" runat="server"></asp:Label>
                 </td>
-                <td>
+                <td style="text-align: center">
                     <asp:Button ID="Button_Sex" runat="server" Text="編集" />
                 </td>
             </tr>
@@ -48,7 +48,7 @@
                 <td style="width: 149px">
                     <asp:Label ID="Label_Car" runat="server"></asp:Label>
                 </td>
-                <td>
+                <td style="text-align: center">
                     <asp:Button ID="Button_Car" runat="server" Text="編集" />
                 </td>
             </tr>
@@ -57,7 +57,7 @@
                 <td style="width: 149px">
                     <asp:Label ID="Label_Mail" runat="server"></asp:Label>
                 </td>
-                <td>
+                <td style="text-align: center">
                     <asp:Button ID="Button_Mail" runat="server" Text="編集" />
                 </td>
             </tr>
