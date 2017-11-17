@@ -44,6 +44,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -133,6 +135,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\student.cs">
+      <DependentUpon>Students.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Students.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Students.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Students.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Students.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Students.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Students.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +213,23 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <EntityDeploy Include="Models\Students.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Students.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Students.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Students.edmx</DependentUpon>
+      <LastGenOutput>Students.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Students.edmx.diagram">
+      <DependentUpon>Students.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Students.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Students.edmx</DependentUpon>
+      <LastGenOutput>Students.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -213,7 +250,7 @@
     <Content Include="Views\Employment\Index.aspx" />
     <Content Include="Views\Employment\CompanyList.aspx" />
     <Content Include="Views\Employment\Info.aspx" />
-    <Content Include="Views\Employment\Make\Absence.aspx" />
+    <Content Include="Views\Employment\Absence.aspx" />
     <Content Include="Views\Employment\Make\Style1.aspx" />
     <Content Include="Views\Employment\Make\Style2.aspx" />
     <Content Include="Views\Employment\Make\Style3.aspx" />
@@ -238,10 +275,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

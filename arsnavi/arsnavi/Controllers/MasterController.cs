@@ -8,8 +8,8 @@ namespace arsnavi.Controllers
 {
     public class MasterController : Controller
     {
-        private String name;
-        private String id;
+        public static String name;
+        public static String id;
 
         public MasterController()
         {
