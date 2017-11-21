@@ -37,7 +37,7 @@
         <%=Html.Encode(Session["name"]) %><br />
         <%=Html.Encode(Session["id"]) %>
 
-        <%=Html.ActionLink("リンク", "Browse", "Employment"%>
+        <%=Html.ActionLink("リンク", "Style1", "Employment")%>
 
         <br />
     </div>
