@@ -15,5 +15,12 @@ namespace arsnavi.Controllers
         {
             return View();
         }
+
+        public ActionResult Browse(String str)
+        {
+            return View();
+        }
     }
+
+
 }
