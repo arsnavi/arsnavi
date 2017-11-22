@@ -272,7 +272,6 @@
     <Content Include="Views\Shared\mobile.Master" />
     <Content Include="Views\Shared\master.Master" />
     <Content Include="Views\Shared\master - コピー.Master" />
-    <Content Include="Views\Shared\Master.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
