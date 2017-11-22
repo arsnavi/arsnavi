@@ -19,11 +19,9 @@
         <table style="width: 791px; height: 211px" border="1">
             <tr>
                 <td style="text-align: center; width: 664px; height: 41px">　　　　<strong>　　　　　　　試　験　結　果　報　告　書　（　内　定　確　約　書　）　</strong></td>
-<<<<<<< HEAD
+
                 <td rowspan="2" style="text-align: center; width: 111px;"><strong>様式４</strong></td>
-=======
-                <td rowspan="2" style="text-align: center"><strong style="border-color: #000000">様式４</strong></td>
->>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
+
             </tr>
             <tr>
                 <td style="text-align: center; width: 664px; height: 17px">　　　　　　　　　　　　※保護者様へ・・・内容をご確認の上、著名・捺印をお願いいたします</td>
@@ -192,18 +190,18 @@
             <tr>
                 <td style="width: 309px; text-align: center">勤務予定地</td>
                 <td style="width: 831px">
-                    <asp:RadioButton ID="RadioButton_Prefecture_in" runat="server" />
-                    県内（）<asp:RadioButton ID="RadioButton_Prefecture_out" runat="server" />
-                    県外（）<asp:RadioButton ID="RadioButton_Prefecture_Other" runat="server" />
+                    <asp:RadioButton ID="RadioButton_Prefecture_in" runat="server" GroupName="Prefecture" />
+                    県内（<asp:TextBox ID="TextBox_Prefecture_in" runat="server"></asp:TextBox>
+                    ）<asp:RadioButton ID="RadioButton_Prefecture_out" runat="server" GroupName="Prefecture" />
+                    県外（<asp:TextBox ID="TextBox_Prefecture_out" runat="server"></asp:TextBox>
+                    ）<asp:RadioButton ID="RadioButton_Prefecture_Other" runat="server" GroupName="Prefecture" />
                     未定（）</td>
             </tr>
         </table>
         <br />
-<<<<<<< HEAD
+
         <table class="auto-style1" style="width: 800px" border="1">
-=======
-        <table class="auto-style1" style="width: 100%">
->>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
+
             <tr>
                 <td style="height: 20px; width: 73px;">入社希望</td>
                 <td style="height: 20px; width: 163px;">
@@ -215,15 +213,11 @@
                 <td style="height: 20px">上記のとおりに確約いたします。</td>
             </tr>
             <tr>
-<<<<<<< HEAD
+
                 <td colspan="3" rowspan="4">※入社希望「する」に〇をつけた時は、<br />
                     「内定通知書」または「採用通知書」または<br />
                     「採用通知書」等の書類を添えて、提出してください。</td>
-=======
-                <td colspan="3" rowspan="4">※入社希望「する」に〇をつけた時は、「内定通知書」または<br />
-                    「採用通知書」または「採用通知書」等の書類を添えて、提出<br />
-                    してください。</td>
->>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
+
                 <td>平成　　年　　月　　日</td>
             </tr>
             <tr>
@@ -242,11 +236,7 @@
             </table>
         <p>
         </p>
-<<<<<<< HEAD
         <table class="auto-style1" style="width: 800px" border="1">
-=======
-        <table class="auto-style1" style="width: 100%">
->>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
             <tr>
                 <td style="text-align: center; height: 17px; width: 5px;">区分</td>
                 <td colspan="2" style="text-align: center; height: 17px">企業名</td>
@@ -287,25 +277,8 @@
                 </td>
             </tr>
         </table>
-<<<<<<< HEAD
         <br />
         　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button_Print" runat="server" style="text-align: center" Text="印刷" />
-=======
-        <table class="auto-style1" style="height: 106px; width: 129%">
-            <tr>
-                <td rowspan="2" style="width: 605px">　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button1" runat="server" style="text-align: center" Text="印刷する" />
-                </td>
-                <td style="height: 17px; width: 99px; text-align: center">就職部</td>
-                <td style="height: 17px; text-align: center">担任</td>
-            </tr>
-            <tr>
-                <td style="width: 99px"></td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <br />
->>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
-        <br />
     </form>
 
 </asp:Content>
