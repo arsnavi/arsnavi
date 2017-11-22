@@ -274,7 +274,12 @@
     <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Shared\mobile.Master" />
     <Content Include="Views\Shared\master.Master" />
+<<<<<<< HEAD
+    <Content Include="Views\Shared\master - コピー.Master" />
+    <Content Include="Views\Employment\Make\Style1.cshtml" />
+=======
     <Content Include="Views\Shared\master %28いらないほう%29.Master" />
+>>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -30,25 +30,32 @@
                     年　<asp:Label ID="Label_Activity_Data_Month" runat="server"></asp:Label>
                     月　<asp:Label ID="Label_Activity_Data_Day" runat="server"></asp:Label>
                     日</td>
-                <td colspan="2" style="width: 150px; height: 84px">時間</td>
-                <td colspan="4" style="height: 84px">
+                <td colspan="2" style="width: 150px; height: 84px; text-align: center;">時間</td>
+                <td colspan="4" style="height: 84px; text-align: center;">
                     <asp:TextBox ID="TextBox_Start_Timr" runat="server" Width="82px"></asp:TextBox>
                     ～<asp:TextBox ID="TextBox_End_Time" runat="server" Width="82px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="width: 80px; height: 48px;">時　限</td>
-                <td style="height: 48px; width: 150px;">１限</td>
-                <td colspan="2" style="height: 48px; width: 150px;">２限</td>
-                <td class="auto-style3" colspan="3" style="width: 150px; height: 48px;">３限</td>
-                <td style="height: 48px; width: 150px;">4限</td>
-                <td rowspan="2" style="width: 82px">目的</td>
-                <td rowspan="2" style="width: 149px" class="auto-style3">1.合同説明会<br />
+                <td style="height: 48px; width: 150px; text-align: center;">１限</td>
+                <td colspan="2" style="height: 48px; width: 150px; text-align: center;">２限</td>
+                <td class="auto-style3" colspan="3" style="width: 150px; height: 48px; text-align: center;">３限</td>
+                <td style="height: 48px; width: 150px; text-align: center;">4限</td>
+                <td rowspan="2" style="width: 59px">目的</td>
+                <td rowspan="2" style="width: 167px" class="auto-style3">
+                    <asp:CheckBox ID="CheckBox_Congruence" runat="server" />
+                    1.合同説明会<br />
+                    <asp:CheckBox ID="CheckBox_Single" runat="server" />
                     2.単独説明会<br />
+                    <asp:CheckBox ID="CheckBox_visit" runat="server" />
                     3.会社(施設)見学<br />
+                    <asp:CheckBox ID="CheckBox_Test" runat="server" />
                     4.入社試験<br />
+                    <asp:CheckBox ID="CheckBox_WebTest" runat="server" />
                     5.Webテスト・作品提出<br />
-                    6.その他()</td>
+                    6.その他(<asp:TextBox ID="TextBox_The_Purpose" runat="server"></asp:TextBox>
+                    )</td>
             </tr>
             <tr>
                 <td style="width: 80px; height: 68px;">科　目<br />
@@ -84,7 +91,8 @@
         <table style="width: 801px; height: 64px" border="1">
             <tr>
                 <td style="width: 100px; height: 59px;">応募方法</td>
-                <td class="auto-style3" style="width: 300px; height: 59px;">学校応募・自由応募・縁故（続柄：)</td>
+                <td class="auto-style3" style="width: 300px; height: 59px;">学校応募・自由応募・縁故（続柄：<asp:TextBox ID="TextBox_RelationShip" runat="server"></asp:TextBox>
+                    )</td>
             </tr>
         </table>
         <table class="auto-style1" style="height: 341px; width: 801px; margin-top: 41px;" border="1">
@@ -135,7 +143,20 @@
             </tr>
             <tr>
                 <td class="auto-style3">提出書類</td>
-                <td class="auto-style3" colspan="5">履歴書・成績証明書・卒業見込み証明書・健康診断書・保育士見込・幼稚園経論見込・その他(<asp:TextBox ID="TextBox_Others" runat="server"></asp:TextBox>
+                <td class="auto-style3" colspan="5">
+                    <asp:CheckBox ID="CheckBox_Resume" runat="server" />
+                    履歴書<br />
+                    <asp:CheckBox ID="CheckBox_Recode" runat="server" />
+                    成績証明書<br />
+                    <asp:CheckBox ID="CheckBox_Graduate" runat="server" />
+                    卒業見込み証明書<br />
+                    <asp:CheckBox ID="CheckBox_Health" runat="server" />
+                    健康診断書<br />
+                    <asp:CheckBox ID="CheckBox_Childminder" runat="server" />
+                    保育士見込<br />
+                    <asp:CheckBox ID="CheckBox_Kindergarten" runat="server" />
+                    幼稚園経論見込<br />
+                    その他(<asp:TextBox ID="TextBox_Others" runat="server"></asp:TextBox>
                     )</td>
             </tr>
         </table>

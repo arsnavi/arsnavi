@@ -15,11 +15,15 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <form id="form1" runat="server">
-        <table style="width: 791px; height: 211px">
+    <form id="form1" runat="server" style="text-align: left">
+        <table style="width: 791px; height: 211px" border="1">
             <tr>
                 <td style="text-align: center; width: 664px; height: 41px">　　　　<strong>　　　　　　　試　験　結　果　報　告　書　（　内　定　確　約　書　）　</strong></td>
+<<<<<<< HEAD
+                <td rowspan="2" style="text-align: center; width: 111px;"><strong>様式４</strong></td>
+=======
                 <td rowspan="2" style="text-align: center"><strong style="border-color: #000000">様式４</strong></td>
+>>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
             </tr>
             <tr>
                 <td style="text-align: center; width: 664px; height: 17px">　　　　　　　　　　　　※保護者様へ・・・内容をご確認の上、著名・捺印をお願いいたします</td>
@@ -31,10 +35,11 @@
                 <td colspan="2" style="height: 21px">アルスコンピュータ専門学校長殿</td>
             </tr>
         </table>
-        <table style="width: 791px; height: 34px">
+        <br />
+        <table style="width: 800px; height: 34px" border="1">
             <tr>
                 <td style="width: 96px; height: 36px">試験結果</td>
-                <td style="height: 36px">
+                <td style="height: 36px; width: 679px;">
                     <asp:RadioButton ID="RadioButton_Passing" runat="server" GroupName="results" />
                     <asp:RadioButton ID="RadioButton_failure" runat="server" GroupName="results" />
                     (<asp:RadioButton ID="RadioButton_failure1" runat="server" GroupName="failureResults" />
@@ -47,7 +52,7 @@
             </tr>
         </table>
         <br />
-        <table class="auto-style1" style="height: 28px; width: 129%">
+        <table class="auto-style1" style="height: 28px; width: 800px" border="1">
             <tr>
                 <td colspan="3" style="text-align: right; height: 28px">平成<asp:Label ID="Label_year" runat="server"></asp:Label>
                     年　<asp:Label ID="Label_month" runat="server"></asp:Label>
@@ -65,18 +70,19 @@
                 </td>
             </tr>
         </table>
-        <table class="auto-style1" style="height: 166px; width: 129%">
+        <br />
+        <table class="auto-style1" style="height: 166px; width: 800px" border="1">
             <tr>
-                <td style="width: 89px; height: 27px; text-align: center">通 知 日</td>
-                <td style="height: 27px">平成<asp:Label ID="Label_notice_year" runat="server"></asp:Label>
+                <td style="width: 800px; ">通 知 日</td>
+                <td style="width: 831px;">平成<asp:Label ID="Label_notice_year" runat="server"></asp:Label>
                     年　<asp:Label ID="Label_notice_month" runat="server"></asp:Label>
                     月　<asp:Label ID="Label_notice_day" runat="server"></asp:Label>
                     日　(<asp:Label ID="Label_youbi" runat="server"></asp:Label>
                     )</td>
             </tr>
             <tr>
-                <td style="width: 89px; text-align: center; height: 20px">通知の方法</td>
-                <td style="height: 20px">1.<asp:CheckBox ID="CheckBox_notice_oral" runat="server" />
+                <td style="width: 800px; ">通知の方法</td>
+                <td style="width: 831px;">1.<asp:CheckBox ID="CheckBox_notice_oral" runat="server" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.<asp:CheckBox ID="CheckBox_notice_phone" runat="server" />
 &nbsp;&nbsp;&nbsp;&nbsp; 3.<asp:CheckBox ID="CheckBox_notice_document" runat="server" />
 &nbsp;&nbsp;&nbsp;&nbsp; 4.<asp:CheckBox ID="CheckBox_notice_Other" runat="server" />
@@ -84,20 +90,20 @@
                     )</td>
             </tr>
             <tr>
-                <td style="width: 89px; text-align: center">求人票No.</td>
-                <td>&nbsp;<asp:RadioButton ID="RadioButton_Jobvote" runat="server" GroupName="Jobvote" />
+                <td style="width: 800px; ">求人票No.</td>
+                <td style="width: 831px">&nbsp;<asp:RadioButton ID="RadioButton_Jobvote" runat="server" GroupName="Jobvote" />
                     (No.<asp:TextBox ID="TextBox1" runat="server" Width="91px"></asp:TextBox>
                     )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ・&nbsp;&nbsp;&nbsp;&nbsp; 
                     <asp:RadioButton ID="RadioButton_Jobvote_None" runat="server" GroupName="Jobvote" />
                 </td>
             </tr>
             <tr>
-                <td style="width: 89px; text-align: center; height: 27px">企業名</td>
-                <td style="height: 27px"></td>
+                <td style="width: 800px; ">企業名</td>
+                <td style="width: 831px;"></td>
             </tr>
             <tr>
-                <td style="width: 89px; text-align: center; height: 25px">採用担当者</td>
-                <td style="height: 25px">
+                <td style="width: 800px; ">採用担当者</td>
+                <td style="width: 831px;">
                     <asp:TextBox ID="TextBox_Recruitment_category" runat="server" Width="89px"></asp:TextBox>
                     部<asp:TextBox ID="TextBox_Recruitment_Department" runat="server" Width="105px"></asp:TextBox>
                     課　　　役職名<asp:TextBox ID="TextBox_Recruitment_Position" runat="server" Width="98px"></asp:TextBox>
@@ -105,58 +111,58 @@
                 </td>
             </tr>
             <tr>
-                <td rowspan="3" style="width: 89px; text-align: center">所　在　地<br />
+                <td rowspan="3" style="width: 800px; ">所　在　地<br />
                     （本社）</td>
-                <td style="height: 9px">〒<asp:TextBox ID="TextBox_Recruitment_Postalcode" runat="server"></asp:TextBox>
+                <td style="width: 831px;">〒<asp:TextBox ID="TextBox_Recruitment_Postalcode" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td style="height: 38px">
+                <td style="width: 831px;">
                     <asp:TextBox ID="TextBox2" runat="server" Height="36px" Width="693px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="right" style="height: 20px">℡<asp:TextBox ID="TextBox_Recruitment_TelephoneNumber" runat="server"></asp:TextBox>
+                <td class="right" style="width: 831px;">℡<asp:TextBox ID="TextBox_Recruitment_TelephoneNumber" runat="server" Width="148px"></asp:TextBox>
                 </td>
             </tr>
         </table>
         <br />
-        <table class="auto-style1" style="width: 129%">
+        <table class="auto-style1" style="width: 800px" border="1">
             <tr>
                 <td colspan="2" style="height: 20px">※合格者は以下の事項を記入し、内定確約書とします。（内定通知書のコピーを添付し提出）</td>
             </tr>
             <tr>
-                <td style="height: 22px; width: 106px; text-align: center">企業名</td>
-                <td style="height: 22px">
+                <td style="height: 22px; width: 309px; text-align: center">企業名</td>
+                <td style="height: 22px; width: 831px;">
                     <asp:TextBox ID="TextBox3" runat="server" Width="620px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td style="height: 20px; width: 106px; text-align: center">応　　募</td>
-                <td style="height: 20px">
+                <td style="height: 20px; width: 309px; text-align: center">応　　募</td>
+                <td style="height: 20px; width: 831px;">
                     <asp:RadioButton ID="RadioButton_Application1" runat="server" GroupName="Application" />
                     <asp:RadioButton ID="RadioButton_Application2" runat="server" GroupName="Application" />
                     <asp:RadioButton ID="RadioButton_Application3" runat="server" GroupName="Application" />
                 </td>
             </tr>
             <tr>
-                <td rowspan="3" style="width: 89px; text-align: center">所　在　地<br />
+                <td rowspan="3" style="width: 309px; text-align: center">所　在　地<br />
                     （本社）</td>
-                <td style="height: 9px">〒<asp:TextBox ID="TextBox_Recruitment_Postalcode0" runat="server"></asp:TextBox>
+                <td style="height: 9px; width: 831px;">〒<asp:TextBox ID="TextBox_Recruitment_Postalcode0" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td style="height: 38px">
+                <td style="height: 38px; width: 831px;">
                     <asp:TextBox ID="TextBox4" runat="server" Height="36px" Width="693px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="right" style="height: 20px">℡<asp:TextBox ID="TextBox_Recruitment_TelephoneNumber0" runat="server"></asp:TextBox>
+                <td class="right" style="height: 20px; width: 831px;">℡<asp:TextBox ID="TextBox_Recruitment_TelephoneNumber0" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td style="width: 106px; text-align: center; height: 47px">会社業種</td>
-                <td style="height: 47px">
+                <td style="width: 309px; text-align: center; height: 47px">会社業種</td>
+                <td style="height: 47px; width: 831px;">
                     <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatColumns="4">
                         <asp:ListItem>金融・保険・証券関係</asp:ListItem>
                         <asp:ListItem>建造業関係</asp:ListItem>
@@ -178,22 +184,26 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 106px; text-align: center">採用職種</td>
-                <td>
+                <td style="width: 309px; text-align: center">採用職種</td>
+                <td style="width: 831px">
                     <asp:TextBox ID="TextBox_Adopt_Job" runat="server" Width="378px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp; (例：プログラマ、事務)</td>
             </tr>
             <tr>
-                <td style="width: 106px; text-align: center">勤務予定地</td>
-                <td>
+                <td style="width: 309px; text-align: center">勤務予定地</td>
+                <td style="width: 831px">
                     <asp:RadioButton ID="RadioButton_Prefecture_in" runat="server" />
-                    <asp:RadioButton ID="RadioButton_Prefecture_out" runat="server" />
-                    <asp:RadioButton ID="RadioButton_Prefecture_Other" runat="server" />
-                </td>
+                    県内（）<asp:RadioButton ID="RadioButton_Prefecture_out" runat="server" />
+                    県外（）<asp:RadioButton ID="RadioButton_Prefecture_Other" runat="server" />
+                    未定（）</td>
             </tr>
         </table>
         <br />
+<<<<<<< HEAD
+        <table class="auto-style1" style="width: 800px" border="1">
+=======
         <table class="auto-style1" style="width: 100%">
+>>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
             <tr>
                 <td style="height: 20px; width: 73px;">入社希望</td>
                 <td style="height: 20px; width: 163px;">
@@ -205,9 +215,15 @@
                 <td style="height: 20px">上記のとおりに確約いたします。</td>
             </tr>
             <tr>
+<<<<<<< HEAD
+                <td colspan="3" rowspan="4">※入社希望「する」に〇をつけた時は、<br />
+                    「内定通知書」または「採用通知書」または<br />
+                    「採用通知書」等の書類を添えて、提出してください。</td>
+=======
                 <td colspan="3" rowspan="4">※入社希望「する」に〇をつけた時は、「内定通知書」または<br />
                     「採用通知書」または「採用通知書」等の書類を添えて、提出<br />
                     してください。</td>
+>>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
                 <td>平成　　年　　月　　日</td>
             </tr>
             <tr>
@@ -226,7 +242,11 @@
             </table>
         <p>
         </p>
+<<<<<<< HEAD
+        <table class="auto-style1" style="width: 800px" border="1">
+=======
         <table class="auto-style1" style="width: 100%">
+>>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
             <tr>
                 <td style="text-align: center; height: 17px; width: 5px;">区分</td>
                 <td colspan="2" style="text-align: center; height: 17px">企業名</td>
@@ -239,20 +259,38 @@
                 <td style="height: 20px; width: 226px"></td>
                 <td style="height: 20px; width: 149px"></td>
                 <td style="height: 20px; width: 83px"></td>
-                <td style="height: 20px"></td>
+                <td style="height: 20px">訪問予定・受験手続中・結果待・内定</td>
             </tr>
             <tr>
                 <td colspan="2">&nbsp;</td>
                 <td style="width: 226px">&nbsp;</td>
                 <td style="width: 149px">&nbsp;</td>
                 <td style="width: 83px">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>訪問予定・受験手続中・結果待・内定</td>
+            </tr>
+            </table>
+        &nbsp;　区分には応募方法を記入してください。（学：学校応募　　自：自由応募　　緑：縁故）<br />
+        　　　　　　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <table align="center" border="1" style="width: 198px; margin-left: 341px;">
+            <tr>
+                <td style="text-align: center">就職部</td>
+                <td style="text-align: center">担　任</td>
             </tr>
             <tr>
-                <td colspan="4" style="font-size: xx-small"><strong>　区分には応募方法を記入してください。（学：学校応募　　自：自由応募　縁：縁故）</strong></td>
-                <td colspan="2">&nbsp;</td>
+                <td>
+                    <br />
+                </td>
+                <td style="right: 200px">
+                    <br />
+                    <br />
+                    <br />
+                </td>
             </tr>
         </table>
+<<<<<<< HEAD
+        <br />
+        　　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button_Print" runat="server" style="text-align: center" Text="印刷" />
+=======
         <table class="auto-style1" style="height: 106px; width: 129%">
             <tr>
                 <td rowspan="2" style="width: 605px">　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button1" runat="server" style="text-align: center" Text="印刷する" />
@@ -266,6 +304,7 @@
             </tr>
         </table>
         <br />
+>>>>>>> e99687fba6e4b71445b47be11f5973af62c1add8
         <br />
     </form>
 
