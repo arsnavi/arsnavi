@@ -40,6 +40,7 @@
         <%=Html.ViewData["user_name"] %><br />
         <%=Html.ViewData["user_id"] %>
 
+
         <br />
 
         <textarea id="TextArea1" cols="20" rows="2"></textarea>
