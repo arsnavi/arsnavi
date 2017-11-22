@@ -59,3 +59,12 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+
+/*
+    自分たちで勝手に決めた項目
+*/
+table, td, tr {
+    background-color: white;
+    border: 2px #808080 groove;
+}
