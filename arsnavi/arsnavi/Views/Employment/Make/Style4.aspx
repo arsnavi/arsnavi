@@ -19,7 +19,7 @@
         <table style="width: 791px; height: 211px">
             <tr>
                 <td style="text-align: center; width: 664px; height: 41px">　　　　<strong>　　　　　　　試　験　結　果　報　告　書　（　内　定　確　約　書　）　</strong></td>
-                <td rowspan="2" style="text-align: center"><strong>様式４</strong></td>
+                <td rowspan="2" style="text-align: center"><strong style="border-color: #000000">様式４</strong></td>
             </tr>
             <tr>
                 <td style="text-align: center; width: 664px; height: 17px">　　　　　　　　　　　　※保護者様へ・・・内容をご確認の上、著名・捺印をお願いいたします</td>
@@ -193,19 +193,21 @@
             </tr>
         </table>
         <br />
-        <table class="auto-style1" style="width: 129%">
+        <table class="auto-style1" style="width: 100%">
             <tr>
                 <td style="height: 20px; width: 73px;">入社希望</td>
                 <td style="height: 20px; width: 163px;">
                     <asp:RadioButton ID="RadioButton_Joined" runat="server" GroupName="Joined" />
                 </td>
-                <td style="height: 20px; width: 155px;" aria-autocomplete="none">
+                <td style="height: 20px; width: 100px;" aria-autocomplete="none">
                     <asp:RadioButton ID="RadioButton_NotJoined" runat="server" GroupName="Joined" />
                 </td>
                 <td style="height: 20px">上記のとおりに確約いたします。</td>
             </tr>
             <tr>
-                <td colspan="3" rowspan="4">※入社希望「する」に〇をつけた時は、「内定通知書」または「採用通知書」または「採用通知書」等の書類を添えて、提出してください。</td>
+                <td colspan="3" rowspan="4">※入社希望「する」に〇をつけた時は、「内定通知書」または<br />
+                    「採用通知書」または「採用通知書」等の書類を添えて、提出<br />
+                    してください。</td>
                 <td>平成　　年　　月　　日</td>
             </tr>
             <tr>
@@ -224,25 +226,25 @@
             </table>
         <p>
         </p>
-        <table class="auto-style1" style="width: 129%">
+        <table class="auto-style1" style="width: 100%">
             <tr>
-                <td style="text-align: center; height: 17px">区分</td>
+                <td style="text-align: center; height: 17px; width: 5px;">区分</td>
                 <td colspan="2" style="text-align: center; height: 17px">企業名</td>
-                <td style="height: 17px; width: 122px">　　　電話番号</td>
+                <td style="height: 17px; width: 149px">　　　電話番号</td>
                 <td style="text-align: center; width: 83px; height: 17px">担 当 者</td>
                 <td style="text-align: center; height: 17px">活　　動　　状　　況</td>
             </tr>
             <tr>
                 <td colspan="2" style="height: 20px"></td>
                 <td style="height: 20px; width: 226px"></td>
-                <td style="height: 20px; width: 122px"></td>
+                <td style="height: 20px; width: 149px"></td>
                 <td style="height: 20px; width: 83px"></td>
                 <td style="height: 20px"></td>
             </tr>
             <tr>
                 <td colspan="2">&nbsp;</td>
                 <td style="width: 226px">&nbsp;</td>
-                <td style="width: 122px">&nbsp;</td>
+                <td style="width: 149px">&nbsp;</td>
                 <td style="width: 83px">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
@@ -251,7 +253,19 @@
                 <td colspan="2">&nbsp;</td>
             </tr>
         </table>
-        <asp:Button ID="Button1" runat="server" style="text-align: center" Text="Button" />
+        <table class="auto-style1" style="height: 106px; width: 129%">
+            <tr>
+                <td rowspan="2" style="width: 605px">　　　　　　　　　　　　　　　　　　　　　　　　<asp:Button ID="Button1" runat="server" style="text-align: center" Text="印刷する" />
+                </td>
+                <td style="height: 17px; width: 99px; text-align: center">就職部</td>
+                <td style="height: 17px; text-align: center">担任</td>
+            </tr>
+            <tr>
+                <td style="width: 99px"></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <br />
         <br />
     </form>
 

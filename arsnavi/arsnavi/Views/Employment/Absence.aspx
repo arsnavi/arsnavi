@@ -6,6 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Absence</h2>
+<h2>Absence公欠届</h2>
 
 </asp:Content>
