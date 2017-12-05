@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="button_login" runat="server" Text="Login" />
+                    <asp:Button ID="button_login" runat="server" Text="Login" PostBackUrl="http://localhost:56059/Home/Index" />
                 </td>
             </tr>
             <tr>

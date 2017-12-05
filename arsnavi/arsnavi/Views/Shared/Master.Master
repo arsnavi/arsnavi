@@ -11,12 +11,15 @@
 
 
     <style type="text/css">
-        .area_left{
+        div#area_left{
             position:absolute;
-            width:100px;
+            width:20%;
+
+            color: #ffffff;
+            background-color: #424242;
         }
-        .area_right{
-            margin-left:100px;
+        div#area_right{
+            margin-left:21%;
         }
         .auto-style1 {
             width: 100%;
@@ -32,21 +35,27 @@
 <body>
 
 
-    <div id="left" style="position:absolute; width:20%">
+    <div id="area_left">
         <br />
-        <%=Html.Encode(Session["name"]) %><br />
-        <%=Html.Encode(Session["id"]) %>
+        <%=Html.ViewData["user_name"] %><br />
+        <%=Html.ViewData["user_id"] %>
 
-        <%=Html.ActionLink("リンク", "Style1", "Employment")%>
 
         <br />
+
+        <textarea id="TextArea1" cols="20" rows="2"></textarea>
+        <br />
+        <%=Html.ActionLink("リンク", "Index", "Employment", new { id = 1 }, null)%>
+
+
     </div>
 
-    <div id="right" style="margin-left:20%">
+    <div id="area_right">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
     </div>
 
+    
     
 </body>
 </html>

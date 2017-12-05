@@ -16,8 +16,8 @@ namespace arsnavi.Controllers
             name = "野獣先輩";
             id = "16A00";
 
-            ViewData["name"] = name;
-            ViewData["id"] = id;
+            ViewData["user_name"] = name;
+            ViewData["user_id"] = id;
         }
     }
 }

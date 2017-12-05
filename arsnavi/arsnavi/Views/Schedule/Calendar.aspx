@@ -1,11 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/master.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Info
+    Calendar
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Info(企業ごとの詳細。カンパニーリストから飛ぶ)</h2>
+    <form id="form1" runat="server">
+<h2>
+    <asp:Calendar ID="Calendar1" runat="server" Height="309px" Width="621px"></asp:Calendar>
+        </h2>
+        <p>&nbsp;</p>
+
+    </form>
 
 </asp:Content>

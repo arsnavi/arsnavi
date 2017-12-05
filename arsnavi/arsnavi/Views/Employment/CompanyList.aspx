@@ -16,7 +16,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <form id="form1" runat="server">
-<h2>&nbsp;</h2>
+<h2>企業検索（過去のデータ＆学校応募）</h2>
         <table class="auto-style1">
             <tr>
                 <td style="text-align: center;">
