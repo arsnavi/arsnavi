@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{196107B1-93B4-4062-9E81-36A81DE5BE38}</ProjectGuid>
+    <ProjectGuid>{57E60BF9-9527-4A0B-988E-1D30FB5D6005}</ProjectGuid>
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -44,8 +44,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -136,30 +134,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\student.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\logo.png" />
@@ -219,23 +194,6 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <EntityDeploy Include="Models\Students.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Students.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Students.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Students.edmx</DependentUpon>
-      <LastGenOutput>Students.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Students.edmx.diagram">
-      <DependentUpon>Students.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\Students.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Students.edmx</DependentUpon>
-      <LastGenOutput>Students.cs</LastGenOutput>
-    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -252,18 +210,19 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Employment\Activity.aspx" />
-    <Content Include="Views\Employment\Index.aspx" />
-    <Content Include="Views\Employment\CompanyList.aspx" />
     <Content Include="Views\Employment\Absence.aspx" />
+    <Content Include="Views\Employment\Activity.aspx" />
+    <Content Include="Views\Employment\CompanyList.aspx" />
+    <Content Include="Views\Employment\Index.aspx" />
     <Content Include="Views\Employment\Info.aspx" />
     <Content Include="Views\Employment\Make\Style1.aspx" />
     <Content Include="Views\Employment\Make\Style2.aspx" />
     <Content Include="Views\Employment\Make\Style3.aspx" />
     <Content Include="Views\Employment\Make\Style4.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Login\Profile.aspx" />
+    <Content Include="Views\Login\Forget.aspx" />
     <Content Include="Views\Login\Index.aspx" />
+    <Content Include="Views\Login\Profile.aspx" />
     <Content Include="Views\master.css" />
     <Content Include="Views\Schedule\Calendar.aspx" />
     <Content Include="Views\Schedule\Schedule.aspx" />
@@ -275,24 +234,19 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\Error.aspx" />
-    <Content Include="Views\Shared\mobile.Master" />
-    <Content Include="Views\Shared\master.Master" />
-    <Content Include="Views\Shared\master - コピー.Master" />
     <Content Include="Views\Employment\Make\Style1.cshtml" />
     <Content Include="Views\Shared\master %28いらないほう%29.Master" />
+    <Content Include="Views\Shared\master.Master" />
+    <Content Include="Views\Shared\mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -310,7 +264,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57355</DevelopmentServerPort>
+          <DevelopmentServerPort>63174</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:56059/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
