@@ -39,14 +39,14 @@
                 <td style="width: 96px; height: 36px">試験結果</td>
                 <td style="height: 36px; width: 679px;">
                     <asp:RadioButton ID="RadioButton_Passing" runat="server" GroupName="results" />
-                    <asp:RadioButton ID="RadioButton_failure" runat="server" GroupName="results" />
-                    (<asp:RadioButton ID="RadioButton_failure1" runat="server" GroupName="failureResults" />
-                    <asp:RadioButton ID="RadioButton_failure2" runat="server" GroupName="failureResults" />
-                    <asp:RadioButton ID="RadioButton_failure3" runat="server" GroupName="failureResults" />
-                    <asp:RadioButton ID="RadioButton_failure4" runat="server" GroupName="failureResults" />
-                    <asp:RadioButton ID="RadioButton_failure5" runat="server" GroupName="failureResults" />
-                    <asp:RadioButton ID="RadioButton_failure6" runat="server" GroupName="failureResults" />
-                    )</td>
+                    合<asp:RadioButton ID="RadioButton_failure" runat="server" GroupName="results" />
+                    否（<asp:RadioButton ID="RadioButton_failure1" runat="server" GroupName="failureResults" />
+                    書類（作品）<asp:RadioButton ID="RadioButton_failure2" runat="server" GroupName="failureResults" />
+                    Web<asp:RadioButton ID="RadioButton_failure3" runat="server" GroupName="failureResults" />
+                    １次<asp:RadioButton ID="RadioButton_failure4" runat="server" GroupName="failureResults" />
+                    ２次<asp:RadioButton ID="RadioButton_failure5" runat="server" GroupName="failureResults" />
+                    ３次<asp:RadioButton ID="RadioButton_failure6" runat="server" GroupName="failureResults" />
+                    ４次）</td>
             </tr>
         </table>
         <br />
@@ -81,23 +81,25 @@
             <tr>
                 <td style="width: 800px; ">通知の方法</td>
                 <td style="width: 831px;">1.<asp:CheckBox ID="CheckBox_notice_oral" runat="server" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.<asp:CheckBox ID="CheckBox_notice_phone" runat="server" />
-&nbsp;&nbsp;&nbsp;&nbsp; 3.<asp:CheckBox ID="CheckBox_notice_document" runat="server" />
-&nbsp;&nbsp;&nbsp;&nbsp; 4.<asp:CheckBox ID="CheckBox_notice_Other" runat="server" />
-                    (<asp:TextBox ID="TextBox_notice_Other" runat="server"></asp:TextBox>
+                    口頭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.<asp:CheckBox ID="CheckBox_notice_phone" runat="server" />
+                    電話&nbsp;&nbsp;&nbsp;&nbsp; 3.<asp:CheckBox ID="CheckBox_notice_document" runat="server" />
+                    文書&nbsp;&nbsp;&nbsp;&nbsp; 4.<asp:CheckBox ID="CheckBox_notice_Other" runat="server" />
+                    その他(<asp:TextBox ID="TextBox_notice_Other" runat="server"></asp:TextBox>
                     )</td>
             </tr>
             <tr>
                 <td style="width: 800px; ">求人票No.</td>
                 <td style="width: 831px">&nbsp;<asp:RadioButton ID="RadioButton_Jobvote" runat="server" GroupName="Jobvote" />
-                    (No.<asp:TextBox ID="TextBox1" runat="server" Width="91px"></asp:TextBox>
+                    有(No.<asp:TextBox ID="TextBox1" runat="server" Width="91px"></asp:TextBox>
                     )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ・&nbsp;&nbsp;&nbsp;&nbsp; 
                     <asp:RadioButton ID="RadioButton_Jobvote_None" runat="server" GroupName="Jobvote" />
-                </td>
+                    無</td>
             </tr>
             <tr>
                 <td style="width: 800px; ">企業名</td>
-                <td style="width: 831px;"></td>
+                <td style="width: 831px;">
+                    <asp:TextBox ID="TextBox_Company_Name" runat="server" Width="601px"></asp:TextBox>
+                </td>
             </tr>
             <tr>
                 <td style="width: 800px; ">採用担当者</td>
@@ -139,9 +141,9 @@
                 <td style="height: 20px; width: 309px; text-align: center">応　　募</td>
                 <td style="height: 20px; width: 831px;">
                     <asp:RadioButton ID="RadioButton_Application1" runat="server" GroupName="Application" />
-                    <asp:RadioButton ID="RadioButton_Application2" runat="server" GroupName="Application" />
-                    <asp:RadioButton ID="RadioButton_Application3" runat="server" GroupName="Application" />
-                </td>
+                    学校応募<asp:RadioButton ID="RadioButton_Application2" runat="server" GroupName="Application" />
+                    自由応募<asp:RadioButton ID="RadioButton_Application3" runat="server" GroupName="Application" />
+                    縁故</td>
             </tr>
             <tr>
                 <td rowspan="3" style="width: 309px; text-align: center">所　在　地<br />
@@ -206,10 +208,10 @@
                 <td style="height: 20px; width: 73px;">入社希望</td>
                 <td style="height: 20px; width: 163px;">
                     <asp:RadioButton ID="RadioButton_Joined" runat="server" GroupName="Joined" />
-                </td>
+                    する</td>
                 <td style="height: 20px; width: 100px;" aria-autocomplete="none">
                     <asp:RadioButton ID="RadioButton_NotJoined" runat="server" GroupName="Joined" />
-                </td>
+                    しない</td>
                 <td style="height: 20px">上記のとおりに確約いたします。</td>
             </tr>
             <tr>
@@ -238,7 +240,7 @@
         </p>
         <table class="auto-style1" style="width: 800px" border="1">
             <tr>
-                <td style="text-align: center; height: 17px; width: 5px;">区分</td>
+                <td style="text-align: center; height: 17px; width: 5%;">区分</td>
                 <td colspan="2" style="text-align: center; height: 17px">企業名</td>
                 <td style="height: 17px; width: 149px">　　　電話番号</td>
                 <td style="text-align: center; width: 83px; height: 17px">担 当 者</td>
