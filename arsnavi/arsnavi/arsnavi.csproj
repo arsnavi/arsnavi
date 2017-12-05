@@ -219,27 +219,23 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <EntityDeploy Include="Models\Model1.edmx">
+    <EntityDeploy Include="Models\Students.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Students.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Model1.Context.tt">
+    <Content Include="Models\Students.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Students.edmx</DependentUpon>
+      <LastGenOutput>Students.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Content Include="Models\Students.edmx.diagram">
+      <DependentUpon>Students.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\Model1.tt">
+    <Content Include="Models\Students.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Students.edmx</DependentUpon>
+      <LastGenOutput>Students.cs</LastGenOutput>
     </Content>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -291,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
