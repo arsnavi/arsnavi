@@ -6,12 +6,17 @@ using System.Web.Mvc;
 
 namespace arsnavi.Controllers
 {
-    public class RegisterControllers : Controller
+    public class RegisterController : Controller
     {
         //
         // GET: /Register/
 
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult CompanyInfo()
         {
             return View("CompanyInfo");
         }
