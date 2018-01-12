@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F6E18260-8980-435C-86B0-3EBF6FE779F8}</ProjectGuid>
+    <ProjectGuid>{71889C45-92E7-45CC-9734-EE5E694404E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>arsnavi.Tests</RootNamespace>
@@ -107,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\arsnavi\arsnavi.csproj">
-      <Project>{196107B1-93B4-4062-9E81-36A81DE5BE38}</Project>
+      <Project>{57E60BF9-9527-4A0B-988E-1D30FB5D6005}</Project>
       <Name>arsnavi</Name>
     </ProjectReference>
   </ItemGroup>

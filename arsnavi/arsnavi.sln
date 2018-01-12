@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arsnavi", "arsnavi\arsnavi.csproj", "{196107B1-93B4-4062-9E81-36A81DE5BE38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arsnavi", "arsnavi\arsnavi.csproj", "{57E60BF9-9527-4A0B-988E-1D30FB5D6005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arsnavi.Tests", "arsnavi.Tests\arsnavi.Tests.csproj", "{F6E18260-8980-435C-86B0-3EBF6FE779F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arsnavi.Tests", "arsnavi.Tests\arsnavi.Tests.csproj", "{71889C45-92E7-45CC-9734-EE5E694404E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{196107B1-93B4-4062-9E81-36A81DE5BE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{196107B1-93B4-4062-9E81-36A81DE5BE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{196107B1-93B4-4062-9E81-36A81DE5BE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{196107B1-93B4-4062-9E81-36A81DE5BE38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6E18260-8980-435C-86B0-3EBF6FE779F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6E18260-8980-435C-86B0-3EBF6FE779F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6E18260-8980-435C-86B0-3EBF6FE779F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6E18260-8980-435C-86B0-3EBF6FE779F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E60BF9-9527-4A0B-988E-1D30FB5D6005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E60BF9-9527-4A0B-988E-1D30FB5D6005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E60BF9-9527-4A0B-988E-1D30FB5D6005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E60BF9-9527-4A0B-988E-1D30FB5D6005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71889C45-92E7-45CC-9734-EE5E694404E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71889C45-92E7-45CC-9734-EE5E694404E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71889C45-92E7-45CC-9734-EE5E694404E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71889C45-92E7-45CC-9734-EE5E694404E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

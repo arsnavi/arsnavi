@@ -8,13 +8,13 @@
 
 <h2>Style2</h2>
     <form id="TypeA" runat="server">
-    <div class="auto-style1" style="text-align: center">
+    <div class="auto-style1" style="text-align: center; width: 120%;">
     
         就　職　活　動　報　告　書<br />
         (単独会社説明会・会社訪問・その他）</div>
     <p class="auto-style2" style="font-size: large">
         <strong>活動内容 &nbsp;</strong></p>
-        <table class="auto-style3">
+        <table class="auto-style3" style="width: 791px">
             <tr>
                 <td class="auto-style19" style="width: 128px">企業名</td>
                 <td class="auto-style26">
