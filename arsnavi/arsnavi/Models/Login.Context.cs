@@ -25,7 +25,7 @@ namespace arsnavi.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public DbSet<student> student { get; set; }
         public DbSet<teacher> teacher { get; set; }
-        public DbSet<student_detail> student_detail { get; set; }
     }
 }

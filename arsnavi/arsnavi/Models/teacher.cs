@@ -7,10 +7,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-/*
- *      この辺をContollerのreturn Viewに渡してやればいいらしい
- */
-
 namespace arsnavi.Models
 {
     using System;

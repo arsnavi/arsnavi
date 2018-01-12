@@ -132,30 +132,31 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MasterController.cs" />
+    <Compile Include="Controllers\RegisterControllers.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\student_detail.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="Models\Login.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Login.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\student.cs">
+      <DependentUpon>Login.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\teacher.cs">
-      <DependentUpon>User.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>User.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>User.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>User.edmx</DependentUpon>
+      <DependentUpon>Login.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -217,22 +218,22 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <EntityDeploy Include="Models\User.edmx">
+    <EntityDeploy Include="Models\Login.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>User.Designer.cs</LastGenOutput>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\User.Context.tt">
+    <Content Include="Models\Login.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>User.edmx</DependentUpon>
-      <LastGenOutput>User.Context.cs</LastGenOutput>
+      <DependentUpon>Login.edmx</DependentUpon>
+      <LastGenOutput>Login.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\User.edmx.diagram">
-      <DependentUpon>User.edmx</DependentUpon>
+    <Content Include="Models\Login.edmx.diagram">
+      <DependentUpon>Login.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\User.tt">
+    <Content Include="Models\Login.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>User.edmx</DependentUpon>
-      <LastGenOutput>User.cs</LastGenOutput>
+      <DependentUpon>Login.edmx</DependentUpon>
+      <LastGenOutput>Login.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />

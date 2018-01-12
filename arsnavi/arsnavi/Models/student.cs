@@ -12,13 +12,12 @@ namespace arsnavi.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class student_detail
+    public partial class student
     {
         public string id { get; set; }
         public string name { get; set; }
         public string pass { get; set; }
         public string depart_id { get; set; }
-        public string course { get; set; }
         public bool sex { get; set; }
         public bool license { get; set; }
         public string mail { get; set; }
