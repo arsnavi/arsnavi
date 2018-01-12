@@ -265,6 +265,7 @@
     <Content Include="Views\Login\Profile.aspx" />
     <Content Include="Views\Login\Index.aspx" />
     <Content Include="Views\master.css" />
+    <Content Include="Views\Register\CompanyInfo.aspx" />
     <Content Include="Views\Schedule\Calendar.aspx" />
     <Content Include="Views\Schedule\Schedule.aspx" />
     <Content Include="Views\Teacher\Activity.aspx" />
