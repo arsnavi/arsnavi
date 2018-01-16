@@ -37,9 +37,9 @@
         <tr>
             <td style="width: 105px">応募方法</td>
             <td style="width: 255px">
-                <input id="Radio1" checked="true" name="oubo" type="radio" value="V1" />学校応募<br />
-                <input id="Radio2" checked="false" name="oubo" type="radio" value="V1" />自由応募<br />
-                <input id="Radio3" checked="false" name="oubo" type="radio" value="V1" />縁故</td>
+                <input id="Radio1" checked="checked" name="oubo" type="radio" value="V1" />学校応募<br />
+                <input id="Radio2" name="oubo" type="radio" value="V1" />自由応募<br />
+                <input id="Radio3" name="oubo" type="radio" value="V1" />縁故</td>
         </tr>
     </table>
 
