@@ -35,11 +35,14 @@
 </head>
 <body>
 
-
     <div id="area_left">
         <br />
-        <%=Html.ViewData["user_name"] %><br />
-        <%=Html.ViewData["user_id"] %>
+        
+
+
+
+        <%=Html.ViewBag.UserName %><br />
+        <%=Html.ViewBag.UserId %><br />
 
 
         <br />
