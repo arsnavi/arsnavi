@@ -7,5 +7,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
 <h2>Activity活動中の企業</h2>
+    <p>&nbsp;</p>
 
 </asp:Content>
