@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 using arsnavi.Models;
+using arsnavi.Services;
 
 namespace arsnavi.Controllers
 {
@@ -13,7 +14,15 @@ namespace arsnavi.Controllers
         //
         // GET: /Home/
 
-        Entities context = new Entities();
+        private IDatabaseService _service;
+
+        public HomeController() : this(new DatabaseService()) { }
+
+        public HomeController(IDatabaseService service)
+        {
+            _service = service;
+        }
+
 
         public ActionResult Index()
         {
@@ -27,13 +36,7 @@ namespace arsnavi.Controllers
 
         public ActionResult Test()
         {
-            login data = new login
-            {
-                id = "114514",
-                pass = "Yaju_senpai"
-            };
-
-            return View(context.login);
+            return View(_service.Get());
         }
     }
 

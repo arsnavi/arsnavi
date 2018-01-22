@@ -12,7 +12,7 @@ namespace arsnavi.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class login
+    public partial class Login
     {
         public string id { get; set; }
         public string pass { get; set; }
