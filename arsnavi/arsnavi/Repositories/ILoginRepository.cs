@@ -8,6 +8,6 @@ namespace arsnavi.Repositories
 {
     public interface ILoginRepository
     {
-        List<login> Get();
+        List<Login> Get();
     }
 }

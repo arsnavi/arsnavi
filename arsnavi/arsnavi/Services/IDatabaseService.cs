@@ -9,6 +9,6 @@ namespace arsnavi.Services
 {
     public interface IDatabaseService
     {
-        List<login> Get();
+        List<Login> Get();
     }
 }

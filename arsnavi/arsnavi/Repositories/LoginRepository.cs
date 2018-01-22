@@ -12,7 +12,7 @@ namespace arsnavi.Repositories
     {
         private Models.Entities dbContext = new Entities();
 
-        public List<login> Get()
+        public List<Login> Get()
         {
             var query = from x in dbContext.login
                         orderby x.id

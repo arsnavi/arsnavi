@@ -16,8 +16,9 @@ namespace arsnavi.Models
     public partial class Entities : DbContext
     {
         public Entities()
-            : base("name=Entities")
+            : base("name=arsnaviSecureEntities")
         {
+            
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -25,6 +26,6 @@ namespace arsnavi.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<login> login { get; set; }
+        public DbSet<Login> login { get; set; }
     }
 }
