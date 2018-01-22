@@ -26,7 +26,9 @@ namespace arsnavi.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.typeList["Mon1"] = "卒業研究";
+            ViewBag.typeDictionary = new Dictionary<string, string>{
+                {"Mon1", "卒業研究"}
+            };
 
             return View();
         }
