@@ -265,7 +265,7 @@
     <Content Include="Views\Home\Test.aspx" />
     <Content Include="Views\Login\Forget.aspx" />
     <Content Include="Views\Login\Index.aspx" />
-    <Content Include="Views\Login\Profile.aspx" />
+    <Content Include="Views\Login\ChangeProfile.aspx" />
     <Content Include="Views\master.css" />
     <Content Include="Views\Register\CompanyInfo.aspx" />
     <Content Include="Views\Register\Index.aspx" />

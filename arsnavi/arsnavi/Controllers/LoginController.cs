@@ -18,7 +18,7 @@ namespace arsnavi.Controllers
 
         public ActionResult ChangeProfile()
         {
-            return View();
+            return View("Profile");
         }
     }
 }
