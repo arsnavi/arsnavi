@@ -33,7 +33,7 @@ namespace arsnavi.Controllers
             {
                 for(int j = 0; j < 4; j++)
                 {
-                    dictionary.Add(String.Format("{0}{1}", week[i % 5], (j + 1).ToString("d")), "data");
+                    dictionary.Add(String.Format("{0}{1}", week[i % 5], (j + 1).ToString("d")), "卒業研究");
                 }
             }
 

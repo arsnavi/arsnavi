@@ -9,7 +9,7 @@
 
     <form id="form1" runat="server">
 
-        <table border="1" style="width: 400px; height: 302px">
+        <table border="1" style="width: 400px; height: 302px; margin:0 auto">
 
             <!--
                 月：mon
