@@ -15,7 +15,6 @@ namespace arsnavi.Repositories
         public List<Login> Get()
         {
             var query = from x in dbContext.login
-                        orderby x.id
                         select x;
 
             return query.ToList();
