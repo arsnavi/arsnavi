@@ -13,7 +13,7 @@ namespace arsnavi.Controllers
 
         public MasterController()
         {
-            name = "野獣先輩";
+            name = "田所浩二";
             id = "16A00";
 
             ViewBag.UserName = name;
