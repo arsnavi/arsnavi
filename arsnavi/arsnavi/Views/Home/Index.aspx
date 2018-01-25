@@ -31,35 +31,35 @@
             <tr>
                 
 
-                <td><%=Html.ViewBag.typeList["Mon1"] %></td>
-                <td><%=Html.ViewBag.typeList["Tue1"] %></td>
-                <td><%=Html.ViewBag.typeList["Wed1"] %></td>
-                <td><%=Html.ViewBag.typeList["Thu1"] %></td>
-                <td style="width: 74px"><%=Html.ViewBag.typeList["Fri1"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Mon1"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Tue1"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Wed1"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Thu1"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Fri1"] %></td>
   
             </tr>
             <tr>
-                <td><%=Html.ViewBag.typeList["Mon2"] %></td>
-                <td><%=Html.ViewBag.typeList["Tue2"] %></td>
-                <td><%=Html.ViewBag.typeList["Wed2"] %></td>
-                <td><%=Html.ViewBag.typeList["Thu2"] %></td>
-                <td style="width: 74px"><%=Html.ViewBag.typeList["Fri2"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Mon2"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Tue2"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Wed2"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Thu2"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Fri2"] %></td>
 
             </tr>
             <tr>
-                <td><%=Html.ViewBag.typeList["Mon3"] %></td>
-                <td><%=Html.ViewBag.typeList["Tue3"] %></td>
-                <td><%=Html.ViewBag.typeList["Wed3"] %></td>
-                <td><%=Html.ViewBag.typeList["Thu3"] %></td>
-                <td style="width: 74px"><%=Html.ViewBag.typeList["Fri3"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Mon3"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Tue3"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Wed3"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Thu3"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Fri3"] %></td>
 
             </tr>
             <tr>
-                <td><%=Html.ViewBag.typeList["Mon4"] %></td>
-                <td><%=Html.ViewBag.typeList["Thu4"] %></td>
-                <td><%=Html.ViewBag.typeList["Wed4"] %></td>
-                <td><%=Html.ViewBag.typeList["Thu4"] %></td>
-                <td style="width: 74px"><%=Html.ViewBag.typeList["Fri4"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Mon4"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Thu4"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Wed4"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Thu4"] %></td>
+                <td><%=Html.ViewBag.typeDictionary["Fri4"] %></td>
 
             </tr>
             
