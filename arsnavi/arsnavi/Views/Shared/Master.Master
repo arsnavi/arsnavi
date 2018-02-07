@@ -49,7 +49,7 @@
         <textarea id="TextArea1"></textarea>
         <br />
         <%=Html.ActionLink("リンク", "Index", "Employment", new { id = 1 }, null)%><br />
-        <%=Html.ActionLink("CompanyList", "CompanyList")%>
+        <%=Html.ActionLink("CompanyList", "CompanyList", "Employment")%>
 
     </div>
 
