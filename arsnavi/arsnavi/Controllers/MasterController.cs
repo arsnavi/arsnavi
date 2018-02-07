@@ -18,7 +18,6 @@ namespace arsnavi.Controllers
 
             ViewBag.UserName = name;
             ViewBag.UserId = id;
-
         }
     }
 }

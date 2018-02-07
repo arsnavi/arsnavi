@@ -52,5 +52,10 @@ namespace arsnavi.Controllers
             return View("CompanyList");
         }
 
+        public ActionResult CompanyDetail(string id){
+            ViewBag.CompanyID = id;
+            return View("CompanyDetail");
+        }
+
     }
 }

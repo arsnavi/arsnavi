@@ -9,6 +9,19 @@ header, footer, nav, section {
     display: block;
 }
 
+/*
+    自分たちで勝手に決めた項目
+*/
+table, td, tr {
+    background-color: white;
+    border: 2px #808080 groove;
+}
+
+h2 {
+    background-color: white;
+}
+
+
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
@@ -61,10 +74,7 @@ textarea {
 }
 
 
-/*
-    自分たちで勝手に決めた項目
-*/
-table, td, tr {
+p {
     background-color: white;
-    border: 2px #808080 groove;
+    border-radius: 4px;
 }
