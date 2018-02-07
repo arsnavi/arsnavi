@@ -6,10 +6,14 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+    <style type="text/css">
+        td {
+            height: 60px;
+        }
+    </style>
     <form id="form1" runat="server">
 
-        <table border="1" style="width: 400px; height: 302px; margin:0 auto">
+        <table border="1" style="width: 50%; margin:0 auto; table-layout:fixed">
 
             <!--
                 月：mon
@@ -25,7 +29,7 @@
                 <th style = "text-align:center">火</th>
                 <th style = "text-align:center">水</th>
                 <th style = "text-align:center">木</th>
-                <th style = "text-align:center; width: 74px;">金</th>
+                <th style = "text-align:center">金</th>
             </tr>
 
             <tr>
