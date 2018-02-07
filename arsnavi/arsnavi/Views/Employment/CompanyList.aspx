@@ -6,6 +6,11 @@
     {
 
     }
+
+    protected void TextBox1_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 </script>
 
 
@@ -26,24 +31,48 @@
             </tr>
             <tr>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="15" ForeColor="Black" GridLines="Vertical" Height="68px" PageSize="5" Width="605px">
-                        <AlternatingRowStyle BackColor="#CCCCCC" />
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" Height="68px" PageSize="5" Width="605px" AllowPaging="True" AllowSorting="True" DataSourceID="SqlDataSource_CompanyList">
+                        <AlternatingRowStyle BackColor="PaleGoldenrod" />
                         <Columns>
-                            <asp:BoundField HeaderText="学" />
-                            <asp:HyperLinkField HeaderText="会社名" />
-                            <asp:BoundField HeaderText="本社所在地" />
-                            <asp:BoundField HeaderText="業種・職種" />
+                            <asp:TemplateField HeaderText="企業名" SortExpression="name">
+                                <EditItemTemplate>
+                                    <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("name") %>'></asp:TextBox>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink_hp_detail" runat="server" Text='<%# Bind("name") %>' NavigateUrl='<%# Bind("url") %>'></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:BoundField HeaderText="業界" DataField="industry" SortExpression="industry" />
+                            <asp:BoundField HeaderText="募集職種" DataField="recluit" SortExpression="recluit" />
+                            <asp:TemplateField HeaderText="ホームページ" SortExpression="url">
+                                <EditItemTemplate>
+                                    <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("url") %>'></asp:TextBox>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    <asp:HyperLink ID="HyperLink_homepage" runat="server" NavigateUrl='<%# Bind("url") %>' Text='<%# Bind("url") %>'></asp:HyperLink>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField HeaderText="所在地" SortExpression="address">
+                                <EditItemTemplate>
+                                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("address") %>'></asp:TextBox>
+                                </EditItemTemplate>
+                                <ItemTemplate>
+                                    〒<asp:Label ID="Label_zipcode" runat="server" Text='<%# Bind("zipcode") %>'></asp:Label>
+                                    <br />
+                                    <asp:Label ID="Label_address" runat="server" Text='<%# Eval("address", "{0}") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:TemplateField>
                         </Columns>
-                        <FooterStyle BackColor="#CCCCCC" />
-                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                        <SortedAscendingHeaderStyle BackColor="#808080" />
-                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                        <SortedDescendingHeaderStyle BackColor="#383838" />
+                        <FooterStyle BackColor="Tan" />
+                        <HeaderStyle BackColor="Tan" Font-Bold="True" />
+                        <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                        <SortedAscendingCellStyle BackColor="#FAFAE7" />
+                        <SortedAscendingHeaderStyle BackColor="#DAC09E" />
+                        <SortedDescendingCellStyle BackColor="#E1DB9C" />
+                        <SortedDescendingHeaderStyle BackColor="#C2A47B" />
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource_CompanyList" runat="server"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource_CompanyList" runat="server" ConnectionString="Data Source=C301-008\SQLEXPRESS;Initial Catalog=arsnavi;Persist Security Info=True;User ID=arsnaviUser;Password=114514;MultipleActiveResultSets=True;Application Name=EntityFramework" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [name], [industry], [recluit], [url], [zipcode], [address], [method] FROM [companyinfo]"></asp:SqlDataSource>
                     <br />
                 </td>
             </tr>

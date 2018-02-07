@@ -34,7 +34,7 @@ FROM [dbo].[login] AS [login]</DefiningQuery>
           <Property Name="id" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="arsnaviEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="login" EntityType="Self.login" />
         </EntityContainer>
       </Schema>
@@ -42,7 +42,7 @@ FROM [dbo].[login] AS [login]</DefiningQuery>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="arsnaviModelStoreContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="arsnaviModelStoreContainer" CdmEntityContainer="arsnaviEntities">
           <EntitySetMapping Name="login">
             <EntityTypeMapping TypeName="arsnaviModel.login">
               <MappingFragment StoreEntitySet="login">

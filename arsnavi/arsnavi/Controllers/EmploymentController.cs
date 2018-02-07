@@ -47,5 +47,10 @@ namespace arsnavi.Controllers
             return View("Make/Style4");
         }
 
+        public ActionResult CompanyList()
+        {
+            return View("CompanyList");
+        }
+
     }
 }

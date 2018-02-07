@@ -10,11 +10,11 @@ namespace arsnavi.Repositories
 {
     public class LoginRepository : ILoginRepository
     {
-        private Models.Entities dbContext = new Entities();
+        private arsnaviEntities dbContext = new arsnaviEntities();
 
         public List<Login> Get()
         {
-            var query = from x in dbContext.login
+            var query = from x in dbContext.Login
                         select x;
 
             return query.ToList();

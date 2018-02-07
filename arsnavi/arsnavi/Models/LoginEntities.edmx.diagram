@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b7fbf85193bf483bb9a5fbdbd574e240" Name="Diagram1">
+      <Diagram DiagramId="28fef54c96c34300b4547fb6016e6987" Name="Diagram1">
         <EntityTypeShape EntityType="arsnaviModel.login" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

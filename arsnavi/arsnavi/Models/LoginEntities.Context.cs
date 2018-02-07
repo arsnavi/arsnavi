@@ -13,12 +13,11 @@ namespace arsnavi.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class arsnaviEntities : DbContext
     {
-        public Entities()
-            : base("name=arsnaviSecureEntities")
+        public arsnaviEntities()
+            : base("name=arsnaviEntities")
         {
-            
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -26,6 +25,6 @@ namespace arsnavi.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Login> login { get; set; }
+        public DbSet<Login> Login { get; set; }
     }
 }
