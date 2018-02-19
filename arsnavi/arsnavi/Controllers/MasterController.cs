@@ -16,8 +16,18 @@ namespace arsnavi.Controllers
             name = "田所浩二";
             id = "16A00";
 
+            try
+            {
+                id = (String)TempData["account_id"];
+            }
+            catch (NullReferenceException)
+            {
+                id = "Error";
+            }
+
+
             ViewBag.UserName = name;
-            ViewBag.UserId = id;
+            ViewBag.UserId = "stub";
         }
     }
 }

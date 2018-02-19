@@ -55,7 +55,7 @@
             <tr style="border: thin groove #000000">
                 <td style="width: 80px">公欠理由</td>
                 <td colspan="4">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="100%"></asp:TextBox>
                 </td>
             </tr>
         </table>

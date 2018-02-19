@@ -14,8 +14,6 @@ namespace arsnavi.Controllers
     public class LoginController : Controller
     {
 
-        private DatabaseService _service = new DatabaseService();
-
         public ActionResult Index()
         {
             return View();
@@ -24,14 +22,16 @@ namespace arsnavi.Controllers
         // ［送信］ボタンをクリックしたときに呼び出される
         // Postメソッドを定義
         [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult Index(String name)
+        public ActionResult Index(String id, String pass)
         {
-            ViewData["msg"] = String.Format("Hello, {0}!", name);
+            bool flag = new DatabaseService().HasAccount(id, pass);
+            if (flag)
+            {
+                TempData["account_id"] = id;
+                return RedirectToAction("Index", "Home");
+            }
 
-            //ログイン処理
-
-            //Resultビューを指定
-            return View("Result");
+            return View();
         }
     }
 }

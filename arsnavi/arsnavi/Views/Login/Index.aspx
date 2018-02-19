@@ -40,20 +40,19 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="157px"></asp:TextBox>
-                </td>
+                    <%=Html.TextBox("id") %>
             </tr>
             <tr>
                 <td style="text-align:left" class="auto-style2">パスワード</td>
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox2" background-color =" #CAD6D2" runat="server" Width="154px"  ></asp:TextBox>
+                    <%=Html.TextBox("pass") %>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="button_login" runat="server" Text="Login" PostBackUrl="http://localhost:56059/Home/Index" />
+                    <asp:Button ID="button_login" runat="server" Text="Login" />
                 </td>
             </tr>
             <tr>

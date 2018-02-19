@@ -37,5 +37,19 @@ namespace arsnavi.Services
 
             return (model);
         }
+
+        public bool HasAccount(String id, String pass)
+        {
+            var data = _repo.Get();
+
+            foreach (var element in data)
+            {
+                if (element.id.Equals(id + " ") && element.pass.Equals(pass))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
