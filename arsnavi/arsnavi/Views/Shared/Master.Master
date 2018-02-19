@@ -48,7 +48,8 @@
 
         <br />
         <%=Html.ActionLink("リンク", "Index", "Employment", new { id = 1 }, null)%><br />
-        <%=Html.ActionLink("CompanyList", "CompanyList", "EmployMent")%>
+        <%=Html.ActionLink("CompanyList", "CompanyList", "EmployMent")%><br />
+        <%=Html.ActionLink("テストページ", "Test", "Home") %>
 
     </div>
 
