@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace arsnavi.Controllers
 {
-    public class ScheduleController : Controller
+    public class ScheduleController : MasterController
     {
         //
         // GET: /Schedule/
@@ -14,6 +14,11 @@ namespace arsnavi.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult Calendar()
+        {
+            return View("Calendar");
         }
 
     }

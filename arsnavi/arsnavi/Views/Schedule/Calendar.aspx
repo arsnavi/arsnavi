@@ -10,7 +10,7 @@
 <h2>
     <asp:Calendar ID="Calendar1" runat="server" Height="309px" Width="621px"></asp:Calendar>
         </h2>
-        <p>&nbsp;</p>
+        <p>http://www.atmarkit.co.jp/fdotnet/dotnettips/277aspcalceldata/aspcalceldata.html</p>
 
     </form>
 
