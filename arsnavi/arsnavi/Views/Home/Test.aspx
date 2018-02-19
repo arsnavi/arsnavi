@@ -22,6 +22,7 @@
 <% foreach (var item in Model) { %>
     <tr>
         <td>
+            <%: Html.DisplayFor(modelItem => item.id) %>
             <%: Html.DisplayFor(modelItem => item.pass) %>
         </td>
         <td>

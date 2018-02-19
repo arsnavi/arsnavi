@@ -57,7 +57,9 @@ namespace arsnavi.Controllers
 
         public ActionResult Test()
         {
-            return View(_service.Get());
+            var item = _service.Get();
+
+            return View(item);
         }
     }
 

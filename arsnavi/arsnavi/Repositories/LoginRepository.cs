@@ -10,7 +10,7 @@ namespace arsnavi.Repositories
 {
     public class LoginRepository : ILoginRepository
     {
-        private arsnaviEntities dbContext = new arsnaviEntities();
+        private Entities dbContext = new Entities();
 
         public List<Login> Get()
         {
