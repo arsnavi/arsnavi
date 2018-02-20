@@ -34,6 +34,9 @@
     <div style="text-align:center; ">
         
         <img class="logo" src="<%: Url.Content("~/Content/logo.png") %>" />
+
+        <%:Html.ValidationSummary() %>
+
         <table class="auto-style1" align="center" border="1" >
             <tr>
                 <td style="text-align:left" class="auto-style2">学籍番号</td>
