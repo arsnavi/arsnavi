@@ -3,31 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+
+using arsnavi.Filter;
 
 namespace arsnavi.Controllers
 {
+    
+    [WebViewAuthFilter]
     public class MasterController : Controller
     {
-        public static String name;
-        public static String id;
+        public static string name;
+        public static string id;
 
         public MasterController()
         {
             name = "田所浩二";
-            id = "16A00";
+            id = "";
 
-            try
+            HttpCookie cookie = Request.Cookies["user_id"];
+            if(cookie != null)
             {
-                id = (String)TempData["account_id"];
+                id = cookie.Value;
             }
-            catch (NullReferenceException)
-            {
-                id = "Error";
-            }
-
-
+            
             ViewBag.UserName = name;
-            ViewBag.UserId = "stub";
+            ViewBag.UserId = id;
         }
+
+        [HttpPost]
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return this.Redirect("/");
+        }
+        
     }
 }

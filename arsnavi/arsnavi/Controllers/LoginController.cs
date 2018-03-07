@@ -30,6 +30,12 @@ namespace arsnavi.Controllers
             {
                 //ログイン状態を保持するならここの第2引数をtrueにする
                 FormsAuthentication.SetAuthCookie(id, false);
+
+                var cookie = new HttpCookie("user_id");
+                cookie.Value = id;
+                cookie.Path = Request.Path;
+                Response.Cookies.Add(cookie);
+
                 return RedirectToAction("Index", "Home");
             }
             else
